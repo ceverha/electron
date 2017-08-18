@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+
+    <style>
+      body {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      }
+      #videoDisplay {
+      margin-left:auto;
+      margin-right:auto;
+      display: block;
+      }
+      #matchDisplay {
+      background-color: #d74444;
+      font-family: Georgia, Serif;
+      margin: 2em;
+      }
+      .innerMatch {
+      background-color: #ffffff;
+      margin: 1em;
+      }
+      .rounded {
+      border-radius: 1em;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <video id="videoDisplay" type="video/mp4" controls autoplay>
+      Chromium is screwed up :-(
+    </video>
+    <div id="matchDisplay" class="container-fluid rounded">
+      <div class="row">
+	<div class="col-md-5 rounded innerMatch text-center">
+	  Hello, Jack
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-5 rounded innerMatch">
+	  I can't do that, Hal.
+	</div>
+      </div>
+      <div class="row">
+	<div class="col-md-5 rounded innerMatch">
+	  Hello, Jack
+	</div>
+	<div class="col-md-1"></div>
+	<div class="col-md-5 rounded innerMatch">
+	  I can't do that, Hal.
+	</div>
+      </div>
+    </div>
+  </body>
+  <script src="./video.js"></script>
+</html>
